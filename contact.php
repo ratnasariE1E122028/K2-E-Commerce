@@ -79,6 +79,10 @@ $header->render();
                     return $sql;
                 }
             }
+            // class baru
+            class Data extends Pesan {
+                public function __construct($koneksi) {
+                    parent::__construct($koneksi);
 
             $pesan = new Pesan($koneksi);
 
@@ -96,6 +100,8 @@ $header->render();
                     exit();
                 }
             }
+        }
+    }
             ?>
 
 
